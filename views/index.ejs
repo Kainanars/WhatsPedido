@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <form action="" method="POST">
+      <div class="form-group">
+        <label for="name">Nome</label>
+        <input type="text" class="form-control" id="name" name="name" aria-describedby="name" placeholder="Seu nome">
+        <small id="name" class="form-text text-muted">Esse vai ser o nome como vamos te chamar.</small>
+      </div>
+        <div class="form-group">
+          <label for="message">Me envie uma mensagem</label>
+          <textarea type="message" class="form-control" id="message" name="message" aria-describedby="messageHelp" placeholder="Seu message"></textarea>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </body>
+  <%- include('./partials/footer.ejs') %>
+</html>
